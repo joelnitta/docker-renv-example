@@ -25,7 +25,7 @@ docker run -it -e DISABLE_AUTH=true -v ~/repos/docker-renv-example/:/home/rstudi
 ````
 
 Inside the docker container, run the script to install R packages
-with `packrat`. Exit when done.
+with `renv`. Exit when done.
 
 ```
 cd home/rstudio/project
