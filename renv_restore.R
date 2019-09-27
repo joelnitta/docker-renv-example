@@ -4,4 +4,5 @@ options(repos = my_repos)
 
 install.packages("remotes", repos = "https://cran.rstudio.com/")
 remotes::install_github("rstudio/renv")
+renv::consent(provided = TRUE)
 renv::restore(library = "renv")

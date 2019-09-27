@@ -7,6 +7,9 @@ install.packages("remotes", repos = "https://cran.rstudio.com/")
 remotes::install_github("rstudio/renv")
 
 # Initialize renv, but don't let it try to find packages to install itself.
+
+renv::consent(provided = TRUE)
+
 renv::init(
   bare = TRUE,
   force = TRUE,
